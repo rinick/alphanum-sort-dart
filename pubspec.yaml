@@ -1,6 +1,6 @@
 name: alphanum_sort
 description: A library for Alpha Number mixed string sort
-version: 0.1
+version: 0.1.0
 author: Rick Zhou
 homepage: https://github.com/rinick/alphanum-sort-dart
 
