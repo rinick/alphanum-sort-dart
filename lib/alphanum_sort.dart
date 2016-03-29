@@ -54,6 +54,9 @@ class AlphaNumSort {
         numsign = 1;
       }
     }
+    if (len1 == len2 && numlen > 0 && numrslt != 0) {
+      return numsign * numrslt;
+    }
     return numsign*(len1 - len2);
   }
   static int compareCaseInsensitive(String str1, String str2) {
@@ -120,7 +123,11 @@ class AlphaNumSort {
         numsign = 1;
       }
     }
+
     if (len1 == len2) {
+      if (numlen > 0 && numrslt != 0) {
+        return numsign * numrslt;
+      }
       return caseDif;
     }
     return numsign*(len1 - len2);
